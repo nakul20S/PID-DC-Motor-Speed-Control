@@ -100,7 +100,7 @@ The uncontrolled motor settles at ~0.1 rad/s from a 1V step input. DC gain = K�
 ---
 
 ### Figure 2 — PID tuning comparison (P vs PI vs PID)
-![Comparison](figures/P1_comparison.png)
+![Comparison](figure/P1_comparison.png)
 
 Three controllers on the same plant isolate the contribution of each term:
 - **P only:** Fast rise but settles at ~9.5 rad/s — 5% steady-state error is mathematically guaranteed since the proportional force approaches zero as error reduces
@@ -110,21 +110,21 @@ Three controllers on the same plant isolate the contribution of each term:
 ---
 
 ### Figure 3 — Disturbance rejection
-![Disturbance](figures/P1_disturbance.png)
+![Disturbance](figure/P1_disturbance.png)
 
 A load torque disturbance is injected at t = 5s. The output speed shows negligible deviation and recovers immediately. The integral term continuously accumulates new error caused by the disturbance and corrects it before it builds. This property is critical in real applications under variable load — conveyor systems, CNC axes, EV drivetrains.
 
 ---
 
 ### Figure 4 — Open-loop Bode plot with stability margins
-![Bode](figures/P1_bode.png)
+![Bode](figure/P1_bode.png)
 
 Gain crossover frequency ≈ 10 rad/s. Phase at crossover ≈ −85°, giving a phase margin of approximately 95°. This is well above the minimum acceptable margin of 45°, confirming robust stability. The system can tolerate significant parameter variation without going unstable.
 
 ---
 
 ### Figure 5 — Root locus
-![Root locus](figures/P1_rootlocus.png)
+![Root locus](figure/P1_rootlocus.png)
 
 Both closed-loop poles are located in the left-half s-plane at approximately −6 on the real axis, confirming stability. The distance from the imaginary axis determines how quickly disturbances decay — larger negative real part means faster decay.
 
