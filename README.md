@@ -93,7 +93,7 @@ Setpoint → [Σ] → [PID] → [Motor G(s)] → Speed output
 ## Figures
 
 ### Figure 1 — Open-loop step response
-![Open loop](figures/P1_openloop.png)
+![Open loop](figure/P1_openloop.png)
 
 The uncontrolled motor settles at ~0.1 rad/s from a 1V step input. DC gain = Kₜ/(BR + KₑKₜ) ≈ 0.0999. This establishes the baseline problem — the motor is slow, low-gain, and cannot track a setpoint without a controller.
 
