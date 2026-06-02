@@ -1,5 +1,5 @@
 %% PID-Controlled DC Motor Speed Control
-%  Author      : Nakul
+%  Author      : Nakul S
 %  Tool        : MATLAB R2024a + Control System Toolbox
 %  Description : Models a DC motor as a 2nd-order transfer function,
 %                designs a PID controller, and analyses performance
